@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin-ext');
+@import "_reset";
+
+body, html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #4e5860;
+}
+
+.icon {
+	display: inline;
+	font-size: 30px;
+}
+
+.app-box {
+	height: 510px;
+	width: 450px;
+	background-color: #f1f8f9;
+	border-radius: 13px;
+	box-shadow: 0px 10px 69px -8px rgba(0,0,0,0.55);
+	.icon-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 255px;
+		padding: 0 15px;
+	}
+	.location-box {
+		height: 90px;
+		padding-left: 15px;
+		padding-bottom: 15px;
+		width: 100%;
+		.temp-box {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			float: left;
+			height: 100%;
+			width: 130px;
+			font-size: 60px;
+			color: #a5acaf;
+		}
+		.city-box {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			float: left;
+			height: 100%;
+			width: 205px;
+			#description, #city {
+				display: block;
+				width: 100%;
+				text-align: left;
+				color: #a5acaf;
+			}
+			#description {
+				font-weight: 300;
+				font-size: 22px;
+				text-transform: capitalize;
+			}
+			#city {
+				font-size: 22px;
+			}
+		}
+		.date-box {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			float: left;
+			height: 100%;
+			background-color: #54bae6;
+			width: 100px;
+			#month, #day {
+				display: block;
+				width: 100%;
+				text-align: center;
+				color: white;
+				font-size: 25px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.info-box {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 165px;
+		padding: 0 15px;
+		background-color: #2e3335;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		.box {
+			font-weight: 700;
+			color: white;
+			.data {
+				display: inline-block;
+				position: relative;
+		    top: -8px;
+		    margin-left: 10px;
+			}
+		}
+	}
+}
